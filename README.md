@@ -44,8 +44,8 @@ the application:
 - `index.html` tells the browser to request `d3.js` from the server
 - `index.html` tells the browser to request `animateDiv.js` from the server
 
-A quick and dirty way around this would be to combine our JavaScript files into
-one file on the server (bringing this to two requests):
+A quick and dirty way around this would be to combine our compiled JavaScript files 
+into one file on the server (bringing this to two requests):
 
 ```html
 <!-- index.html -->
@@ -155,10 +155,10 @@ that ensures our dependencies are right where they belong.
 
 ## More than Just JavaScript
 
-In addition to bundling up our JavaScript code, webpack also allows us to manage
-all kinds of other assets in our React projects. You may have noticed that we're
-able to `import` CSS files and images in addition to importing JavaScript files
-— this is something we can _only_ do because of webpack.
+In addition to bundling up our compiled JavaScript code, webpack also allows us to 
+manage all kinds of other assets in our React projects. You may have noticed that 
+we're able to `import` CSS files and images in addition to importing JavaScript 
+files — this is something we can _only_ do because of webpack.
 
 You can read more about how webpack is configured to work in our React projects
 in the [Create React App docs][create react app].
